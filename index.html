@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Student Registration System</h1>
+      <p>Our system makes it easy to sign up students and keep track of important info like names, emails, IDs, and phone numbers. It's simple to use and keeps everything organized, helping schools save time and stay organized.</p>
+      <nav>
+        <a href="students.html">See all registered students</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="registration-form">
+        <!--Student form-->
+        <form id="student-form">
+          <label for="student-name">Student Name:</label>
+          <input
+            type="text"
+            id="student-name"
+            placeholder="Santhanam Samy"
+            required
+          />
+
+          <label for="student-id">Student ID:</label>
+          <input type="number" id="student-id" placeholder="18" required />
+
+          <label for="email-id">Email ID:</label>
+          <input
+            type="email"
+            id="email-id"
+            placeholder="E.g. Santhanam@gmil.com"
+            required
+          />
+
+          <label for="contact-no">Contact No.:</label>
+          <input
+            type="text"
+            id="contact-no"
+            placeholder="E.g. 9876543210"
+            required
+          />
+
+          <button type="submit">Register</button>
+          <button type="button" id="cancel-button">
+            Cancel
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!--load JavaScript-->
+    <script src="script.js"></script>
+  </body>
+</html>
